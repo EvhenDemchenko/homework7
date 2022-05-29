@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .task {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border: 1px solid teal;
+    }
+
+    .btnwrapper {
+        display: flex;
+    }
+</style>
+<div class="wrapper">
+    <div class="task1 task">
+        <p class="taskOneText">сть блок с текстом на странице и кнопку. При нажатии на кнопку текст изменяет цвет. При
+            повторном нажатии –
+            возвращается предыдущий цвет
+        </p>
+        <button class="taskOneBtn"> change color</button>
+    </div>
+    <div class="task2 task">
+        <div class="task2Title">
+            На странице есть две кнопки. При нажатии на первую кнопку пользователь должен ввести в prompt ссылку, при
+            нажатии на вторую – переадресовывается на другой сайт (по ранее введенной ссылке).
+        </div>
+        <div class="btnwrapper">
+            <button class="taskTwobtn1"> enter new href</button>
+            <button class="taskTwobtn2"> location asign to</button>
+        </div>
+    </div>
+    <div class="task3 task">
+        <p>Введите размер таблицы в input использую синтаксис след типа "10 х 10"
+            размер полей необходимо разделять с помощью символа "х"
+        </p>
+        <input class="task3input" type="text" placeholder="enter size of table">
+
+        <div class="inner">
+
+        </div>
+
+        <button class="taskThreeButton"> table generator</button>
+
+    </div>
+    <div class="task4 task">
+        В папку images добавить изображения разных размеров: 1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg, 8.jpg,
+        9.jpg. Вывести изображение из этой папки, полученное случайным образом (Math.random). Размер изображения должен
+        соотвецтвовать 80% размеров окна браузера (к примеру окно 1000px, то размер изображения 800px)
+        <div class="output">
+        </div>
+        <button class="bnt4"> get random image</button>
+    </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
