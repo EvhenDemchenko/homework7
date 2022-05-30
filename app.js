@@ -1,9 +1,9 @@
 //task 1
 const taskOneBtn = document.querySelector('.taskOneBtn');
 const taskOneText = document.querySelector('.taskOneText');
-taskOneText.style.backgroundColor = 'transparent';
+taskOneText.style.color = 'black';
 taskOneBtn.addEventListener('click', () => {
-    taskOneText.style.backgroundColor = (taskOneText.style.backgroundColor === 'transparent') ? 'red' : 'transparent';
+    taskOneText.style.color = (taskOneText.style.color === 'black') ? 'red' : 'black';
 })
 
 //task 2
@@ -36,8 +36,8 @@ class newTabUrl {
     }
 }
 
-const user = new newTabUrl;
-user.addEvents();
+const newUrl = new newTabUrl;
+newUrl.addEvents();
 
 
 //task3
